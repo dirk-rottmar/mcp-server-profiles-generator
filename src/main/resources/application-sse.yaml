@@ -1,0 +1,18 @@
+spring:
+  ai:
+    mcp:
+      server:
+        enabled: true
+        name: profiles-generator-mcp-sse
+        version: 0.0.1
+        type: sync
+        instructions: "This server provides Profiles data"
+        capabilities:
+          resource: false
+          tool: true
+          prompt: false
+          completion: false
+
+server:
+  port: 8085
+
