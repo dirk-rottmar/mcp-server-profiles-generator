@@ -1,0 +1,10 @@
+services:
+  mcp-profiles-generator:
+    build: .
+    container_name: mcp-profiles-generator
+    ports:
+      - "8085:8085"
+    environment:
+      - SERVER_PORT=8085
+      - SPRING_PROFILES_ACTIVE=sse
+    restart: unless-stopped
